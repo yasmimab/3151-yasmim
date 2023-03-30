@@ -14,7 +14,7 @@
           </div>
 
           <div class="row navbar bg-light">
-               <div class="col-12 col-md-4">
+               <div class="col">
                     °
                </div>
 
