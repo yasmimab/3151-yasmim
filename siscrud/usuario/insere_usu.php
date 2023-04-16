@@ -1,12 +1,12 @@
 <?php
-     $usu = $_POST["usu"];
-     $pass = $_POST["pass"];
+     $usuario = $_POST["usuario"];
+     $senha = $_POST["senha"];
      $nivel = $_POST["nivel"];
 
-     $con = mysqli_connect("localhost", "root", "", "aula16032023");
+     $con = mysqli_connect("localhost", "root", "", "siscrud");
 
      $sql = "insert into usuario values ";
-     $sql .= "(0, '$usu', sha1('$pass'), $nivel, 1)"; 
+     $sql .= "(0, '$usuario', sha1('$senha'), $nivel, 1)"; 
 
      $result = mysqli_query($con, $sql);
 

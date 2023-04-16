@@ -1,5 +1,4 @@
 <?php
-     $materia = $_POST["materia"];
      $nome = $_POST["nome"];
      $nasc = $_POST["nasc"];
      $rg = $_POST["rg"];
@@ -10,7 +9,7 @@
      $con = mysqli_connect("localhost", "root", "", "siscrud");
 
      $sql = "insert into aluno values ";
-     $sql .= "(0, '$materia','$nome','$nasc','$rg','$cpf','$pai',$mae)"; 
+     $sql .= "(0, '$nome','$nasc','$rg','$cpf','$pai','$mae')"; 
 
      $result = mysqli_query($con, $sql);
 

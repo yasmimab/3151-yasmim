@@ -1,9 +1,9 @@
 <?php
     $id= (int) $_GET["id"];
 
-    $con = mysqli_connect("localhost", "root", "", "aula16032023");
+    $con = mysqli_connect("localhost", "root", "", "siscrud");
 
-    $sql = "select * from usuario where id_usu=$id;";
+    $sql = "select * from usuario where id=$id;";
 
     $result = mysqli_query($con, $sql) or die (mysqli_error($con));
 
@@ -20,19 +20,22 @@
 </head>
 <body>
      <form action="atualiza_usu.php" method="post">
-        <input type="hidden" name="id_usu"
-        value='<?php echo $info['id_usu']?>'><br>
-        USUÁRIO: <input type="text" name="usu" 
-        value='<?php echo $info['nome_usu']?>'><br>
-        SENHA: <input type="password" name="pass"
-        value='<?php echo $info['pass_usu']?>'><br>
+        <input type="hidden" name="id"
+        value='<?php echo $info['id']?>'><br>
+        USUÁRIO: <input type="text" name="usuario" 
+        value='<?php echo $info['usuario']?>'><br>
+        SENHA: <input type="password" name="senha"
+        value='<?php echo $info['senha']?>'><br>
         NIVEL: <br>
 
         <select name="nivel">
-            <option value="1" <?php if(!(strcmp(1, htmlentities($info['nivel_usu'], ENT_COMPAT, 'utf-8')))) {echo "SELECTED";}?> >Administrador</option>
-            <option value="2" <?php if(!(strcmp(1, htmlentities($info['nivel_usu'], ENT_COMPAT, 'utf-8')))) {echo "SELECTED";}?> >Atendente</option>
-            <option value="3" <?php if(!(strcmp(1, htmlentities($info['nivel_usu'], ENT_COMPAT, 'utf-8')))) {echo "SELECTED";}?> >Gerente</option>
+            <option value="1" <?php if(!(strcmp(1, htmlentities($info['nivel'], ENT_COMPAT, 'utf-8')))) {echo "SELECTED";}?> >Administrador</option>
+            <option value="2" <?php if(!(strcmp(1, htmlentities($info['nivel'], ENT_COMPAT, 'utf-8')))) {echo "SELECTED";}?> >Atendente</option>
+            <option value="3" <?php if(!(strcmp(1, htmlentities($info['nivel'], ENT_COMPAT, 'utf-8')))) {echo "SELECTED";}?> >Gerente</option>
         </select><br>
+
+        ATIVO: <input type="text" name="ativo"
+        value='<?php echo $info['ativo']?>'><br>
 
         <input type="submit" value="Atualizar">
      </form>

@@ -7,7 +7,7 @@
      <title>cadastro de produto</title>
 </head>
 <body>
-     <form action="insere_disc.php" method="post">
+     <form action="insere_prod.php" method="post">
           PRODUTO: <input type="text" name="nome"><br>
           PREÇO: <input type="text" name="preco"><br>
           QUANTIDADE: <input type="number" name="qtde"> <br>

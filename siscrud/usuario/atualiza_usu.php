@@ -1,12 +1,13 @@
 <?php
-     $con = mysqli_connect("localhost", "root", "", "aula16032023");
+     $con = mysqli_connect("localhost", "root", "", "siscrud");
 
-     $id = $_POST["id_usu"];
-     $usu = $_POST["usu"];
-     $pass = $_POST["pass"];
+     $id = $_POST["id"];
+     $usuario = $_POST["usuario"];
+     $senha = $_POST["senha"];
      $nivel = $_POST["nivel"];
+     $ativo = $_POST["ativo"];
 
-     $sql = "update usuario set nome_usu='$usu', pass_usu='$pass', nivel_usu='$nivel' where id_usu=$id;";
+     $sql = "update usuario set usuario='$usuario', senha='$senha', nivel='$nivel', ativo='$ativo' where id=$id;";
 
      $result = mysqli_query($con, $sql);
 

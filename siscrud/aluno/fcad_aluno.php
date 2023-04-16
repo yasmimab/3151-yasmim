@@ -7,8 +7,7 @@
      <title>cadastro de alunos</title>
 </head>
 <body>
-     <form action="insere_disc.php" method="post">
-          MATERIA: <input type="text" name="materia"><br>
+     <form action="insere_aluno.php" method="post">
           NOME: <input type="text" name="nome"><br>
           NASCIMENTO: <input type="date" name="nasc"><br>
           RG: <input type="number" name="rg"><br>

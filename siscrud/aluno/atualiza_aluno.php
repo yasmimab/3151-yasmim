@@ -1,8 +1,7 @@
 <?php
      $con = mysqli_connect("localhost", "root", "", "siscrud");
 
-     $id = $_POST["id_aluno"];
-     $materia = $_POST["materia"];
+     $id = $_POST["id"];
      $nome = $_POST["nome"];
      $nasc = $_POST["nasc"];
      $rg = $_POST["rg"];
@@ -10,7 +9,7 @@
      $pai = $_POST["pai"];
      $mae = $_POST["mae"];
 
-     $sql = "update aluno set materia_aluno='$materia', nome_aluno='$nome', nasc_aluno='$nasc', rg_aluno='$rg', cpf_aluno='$cpf', pai_aluno='$pai', mae_aluno='$mae' where id_aluno=$id;";
+     $sql = "update aluno set nome = '$nome', nasc = '$nasc', rg = '$rg', cpf = '$cpf', pai = '$pai', mae = '$mae' where id = '$id';";
 
      $result = mysqli_query($con, $sql);
 

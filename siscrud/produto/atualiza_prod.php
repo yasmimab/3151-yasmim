@@ -1,7 +1,7 @@
 <?php
      $con = mysqli_connect("localhost", "root", "", "siscrud");
 
-     $id = $_POST["id_prod"];
+     $id = $_POST["id"];
      $nome = $_POST["nome"];
      $preco = $_POST["preco"];
      $qtde = $_POST["qtde"];
@@ -12,7 +12,7 @@
      $obs = $_POST["obs"];
 
 
-     $sql = "update disciplina set nome_prod='$nome', preco_prod='$preco', qtde_prod='$qtde' qtde_min_prod='$qtde_min' qtde_max_prod='$qtde_max' dt_fab_prod='$dt_fab' dt_valid_prod='$dt_valid' obs_prod='$obs' where id_prod=$id;";
+     $sql = "update produto set nome = '$nome', preco = '$preco', qtde = '$qtde', qtde_min = '$qtde_min', qtde_max = '$qtde_max', dt_fab= '$dt_fab', dt_valid = '$dt_valid', obs = '$obs' where id = '$id';";
 
      $result = mysqli_query($con, $sql);
 
