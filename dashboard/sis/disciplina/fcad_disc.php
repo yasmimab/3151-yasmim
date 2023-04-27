@@ -5,23 +5,23 @@
 		
 		<div id="linha01" class="row"> 
 			<div class="form-group col-md-1">
-				<label for="cod_disciplina">ID</label>
-				<input type="text" disabled="disabled" value="0" class="form-control" name="cod_disciplina">
+				<label for="id">ID</label>
+				<input type="text" disabled="disabled" value="0" class="form-control" name="id">
 			</div>
 			
 			<div class="form-group col-md-5">
-				<label for="nome_disciplina">Nome da disciplina</label>
-				<input type="text" class="form-control" name="nome_disciplina">
+				<label for="nome">Nome da disciplina</label>
+				<input type="text" class="form-control" name="nome">
 			</div>
 			
 			<div class="form-group col-md-3">
-				<label for="sigla_disciplina">Sigla</label>
-				<input type="text" class="form-control" name="sigla_disciplina">
+				<label for="sigla">Sigla</label>
+				<input type="text" class="form-control" name="sigla">
 			</div>
 			
 			<div class="form-group col-md-2">
-				<label for="ch_disciplina">Ch</label>
-				<select class="form-control" name="ch_disciplina" id="ch_disciplina">
+				<label for="ch">Ch</label>
+				<select class="form-control" name="ch" id="ch">
 					<option value="M" >Manhã</option>
 					<option value="T">Tarde</option>
 					<option value="N">Noite</option>		

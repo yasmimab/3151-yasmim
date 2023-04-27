@@ -21,7 +21,7 @@
 					$pagina = (isset($_GET['pagina'])) ? (int)$_GET['pagina'] : 1;
 					$inicio = ($quantidade * $pagina) - $quantidade;
 
-					$data_all = mysqli_query($con, "select * from produto order by id_produto;") or die(mysqli_error());
+					$data_all = mysqli_query($con, "select * from produto order by id;") or die(mysqli_error());
 
 					echo "<table class='table table-striped' cellspacing='0' cellpading='0'>";
 					echo "<thead><tr>";
@@ -39,19 +39,19 @@
 
 					while($info = mysqli_fetch_array($data_all)){ 
 						echo "<tr>";
-						echo "<td>".$info['id_produto']."</td>";
-						echo "<td>".$info['nome_produto']."</td>";
-						echo "<td>".$info['preco_produto']."</td>";
-						echo "<td class='d-none d-md-table-cell'>".$info['qtde_produto']."</td>";
-						echo "<td class='d-none d-md-table-cell'>".$info['qtde_min_estoque']." </td>";
-						echo "<td class='d-none d-md-table-cell'>".$info['qtde_max_estoque']."</td>";
-						echo "<td class='d-none d-md-table-cell'>".date('d/m/Y',strtotime($info['dt_fab_produto']))."</td>";
-                        echo "<td class='d-none d-md-table-cell'>".date('d/m/Y',strtotime($info['dt_valid_produto']))."</td>";
-                        echo "<td class='d-none d-md-table-cell'>".$info['obs_produto']."</td>";
+						echo "<td>".$info['id']."</td>";
+						echo "<td>".$info['nome_prod']."</td>";
+						echo "<td>".$info['preco_prod']."</td>";
+						echo "<td class='d-none d-md-table-cell'>".$info['qtd_prod']."</td>";
+						echo "<td class='d-none d-md-table-cell'>".$info['min_prod']." </td>";
+						echo "<td class='d-none d-md-table-cell'>".$info['max_prod']."</td>";
+						echo "<td class='d-none d-md-table-cell'>".date('d/m/Y',strtotime($info['dt_fab_prod']))."</td>";
+                        echo "<td class='d-none d-md-table-cell'>".date('d/m/Y',strtotime($info['dt_valid_prod']))."</td>";
+                        echo "<td class='d-none d-md-table-cell'>".$info['obs']."</td>";
 						echo "<td class='actions btn-group-sm d-flex justify-content-center'>";
-					echo "<a class='btn btn-success btn-xs' href=?page=view_pro&pro=".$info['id_produto']."> Visualizar </a>";
-					echo "<a class='btn btn-warning btn-xs' href=?page=fedit_pro&pro=".$info['id_produto']."> Editar </a>"; 
-					echo "<a href=?page=excluir_pro&pro=".$info['id_produto']." class='btn btn-danger btn-xs'> Excluir </a></td>";
+					echo "<a class='btn btn-success btn-xs' href=?page=view_pro&id=".$info['id']."> Visualizar </a>";
+					echo "<a class='btn btn-warning btn-xs' href=?page=fedit_pro&id=".$info['id']."> Editar </a>"; 
+					echo "<a href=?page=excluir_pro&id=".$info['id']." class='btn btn-danger btn-xs'> Excluir </a></td>";
 						
 					}
 					echo "</tr></tbody></table>";

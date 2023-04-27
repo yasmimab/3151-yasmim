@@ -1,12 +1,12 @@
 <?php
-$nome             = $_POST["nome_produto"];
-$preco            = $_POST["preco_produto"];
-$qtde             = $_POST["qtde_produto"];
-$qtdemin          = $_POST["qtde_min_estoque"];
-$qtdemax          = $_POST["qtde_max_estoque"];
-$dtfab            = $_POST["dt_fab_produto"];
-$dtval            = $_POST["dt_valid_produto"];
-$obs              = $_POST["obs_produto"];
+$nome             = $_POST["nome_prod"];
+$preco            = $_POST["preco_prod"];
+$qtde             = $_POST["qtd_prod"];
+$qtdemin          = $_POST["min_prod"];
+$qtdemax          = $_POST["max_prod"];
+$dtfab            = $_POST["dt_fab_prod"];
+$dtval            = $_POST["dt_valid_prod"];
+$obs              = $_POST["obs"];
 
 $fdt_fab 	= implode("-", array_reverse(explode("/", $dtfab)));
 $fdt_val 	= implode("-", array_reverse(explode("/", $dtval)));
@@ -17,10 +17,10 @@ $sql .= "(0, '$nome', '$preco', '$qtde', '$qtdemin', '$qtdemax', '$dtfab', '$dtv
 $resultado = mysqli_query($con, $sql)or die(mysqli_error());
 
 if($resultado){
-    header('Location: \dashboard_2/index.php?page=lista_pro&msg=1');
+    header('Location: \3151-yasmim/dashboard/index.php?page=lista_pro&msg=1');
     mysqli_close($con);
 }else{
-    header('Location: \dashboard_2/index.php?page=lista_pro&msg=4');
+    header('Location: \3151-yasmim/dashboard/index.php?page=lista_pro&msg=4');
     mysqli_close($con);
 }
 ?>

@@ -12,10 +12,10 @@ $sql .= "(0, '$nome', '$sigla', '$ch')";
 $resultado = mysqli_query($con, $sql) or die(mysqli_error($con));
 
 if($resultado){
-	header('Location: \GitHub/3151-yasmim/dashboard/index.php?page=lista_disc&msg=1');
+	header('Location: \3151-yasmim/dashboard/index.php?page=lista_disc&msg=1');
 	mysqli_close($con);
 }else{
-	header('Location: \GitHub/3151-yasmim/dashboard/index.php?page=lista_disc&msg=6');
+	header('Location: \3151-yasmim/dashboard/index.php?page=lista_disc&msg=6');
 	mysqli_close($con);
 }
 ?>

@@ -32,9 +32,9 @@
 					echo "<td class='d-none d-md-table-cell'>".$info['sigla']." </td>";
 					echo "<td class='d-none d-md-table-cell'>".$info['ch']."</td>";
 					echo "<td class='actions btn-group-sm d-flex justify-content-center'>";
-					echo "<a class='btn btn-success btn-xs' href=?page=view_disc&cod=".$info['id']."> Visualizar </a>";
-					echo "<a class='btn btn-warning btn-xs' href=?page=fedit_disc&cod=".$info['id']."> Editar </a>"; 
-					echo "<a href=?page=excluir_disc&cod=".$info['id']." class='btn btn-danger btn-xs'> Excluir </a></td>";
+					echo "<a class='btn btn-success btn-xs' href=?page=view_disc&id=".$info['id']."> Visualizar </a>";
+					echo "<a class='btn btn-warning btn-xs' href=?page=fedit_disc&id=".$info['id']."> Editar </a>"; 
+					echo "<a href=?page=excluir_disc&id=".$info['id']." class='btn btn-danger btn-xs'> Excluir </a></td>";
 				}
 				echo "</tr></tbody></table>";
 			?>				

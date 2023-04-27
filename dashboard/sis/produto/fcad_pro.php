@@ -13,49 +13,49 @@
 		<!-- 1ª LINHA -->	
 		<div class="row"> 
 			<div class="form-group col-xs-12 col-sm-6 col-md-2">
-				<label for="id_produto">ID</label>
-				<input type="text" class="form-control" name="id_produto" readonly>
+				<label for="id">ID</label>
+				<input type="text" class="form-control" name="id" readonly>
 			</div>
 			<div class="form-group col-xs-12 col-sm-6 col-md-5">
-				<label for="nome_produto">Nome</label>
-				<input type="text" class="form-control" name="nome_produto">
+				<label for="nome_prod">Nome</label>
+				<input type="text" class="form-control" name="nome_prod">
 			</div>
 			<div class="form-group col-xs-12 col-sm-6 col-md-3">
-				<label for="preco_produto">Preço</label>
-				<input type="num" class="form-control" name="preco_produto">
+				<label for="preco_prod">Preço</label>
+				<input type="num" class="form-control" name="preco_prod">
 			</div>
 			<div class="form-group col-xs-12 col-sm-6 col-md-2">
-				<label for="qtde_produto">Quantidade</label>
-				<input type="num" class="form-control" name="qtde_produto">
+				<label for="qtd__prod">Quantidade</label>
+				<input type="num" class="form-control" name="qtd_prod">
 			</div>
 		</div>
 		<!-- 2ª LINHA -->
 		<div class="row"> 
 			<div class="form-group col-xs-12 col-sm-6 col-md-6">
-				<label for="qtde_min_estoque">Quantidade minima</label>
-				<input type="text" class="form-control" name="qtde_min_estoque">
+				<label for="min_prod">Quantidade minima</label>
+				<input type="text" class="form-control" name="min_prod">
 			</div>
 
 			<div class="form-group col-xs-12 col-sm-6 col-md-6">
-				<label for="qtde_max_estoque">Quantidade maxima</label>
-				<input type="text" class="form-control" name="qtde_max_estoque">
+				<label for="max_prod">Quantidade maxima</label>
+				<input type="text" class="form-control" name="max_prod">
 			</div>
 		</div>
 		<!-- 3ª LINHA -->
 		<div class="row"> 
 			<div class="form-group col-xs-12 col-sm-6 col-md-6">
-				<label for="dt_fab_produto">Data de fabricação</label>
-				<input type="date" class="form-control" name="dt_fab_produto">
+				<label for="dt_fab_prod">Data de fabricação</label>
+				<input type="date" class="form-control" name="dt_fab_prod">
 			</div>
 	
 			<div class="form-group col-xs-12 col-sm-6 col-md-6">
-				<label for="dt_val_produto">Data de validade</label>
-				<input type="date" class="form-control" name="dt_valid_produto">
+				<label for="dt_val_prod">Data de validade</label>
+				<input type="date" class="form-control" name="dt_valid_prod">
 			</div>
 
             <div class="form-group col-xs-12 col-sm-6 col-md-6">
-				<label for="obs_produto">Obs</label>
-				<input type="text" class="form-control" name="obs_produto">
+				<label for="obs">Obs</label>
+				<input type="text" class="form-control" name="obs">
 			</div>
 		</div>
 		<hr />
