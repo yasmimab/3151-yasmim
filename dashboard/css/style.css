@@ -258,3 +258,12 @@
     left: 0;
   }
 }
+/* 
+.crd {
+  color: black;
+  border:  19px solid rgba(0, 0, 0, 0.45);
+  border-radius: 90px;
+  background-color: rgba(0, 0, 0, 0.493);
+  box-shadow: 10px 10px 10px 10px rgb(0, 0, 0);
+  backdrop-filter: blur(900px);
+} */
