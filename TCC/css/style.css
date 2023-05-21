@@ -44,3 +44,12 @@ header nav a:hover {
     left: 23%;
     margin-left: 10em;
 }
+
+.p-3 img{
+    float: left;
+    margin-bottom: 5em;
+}
+
+.p-3 h5, p{
+   text-align: start;
+}
