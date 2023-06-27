@@ -11,7 +11,7 @@ header{
 header nav{
     width: 100%;
     display: flex;
-    padding-left: 70em; 
+    padding-left: 75em; 
     margin-top: -1.3em;
     list-style: none;
 }
@@ -23,7 +23,7 @@ header nav a{
 }
 
 header nav a:hover {
-    color: #004D08;
+    color: #318F3A;
     text-decoration: underline;
 }
 
@@ -33,7 +33,7 @@ header nav a:hover {
 }
 
 #inicio{
-    color: #004D08;
+    color: #318F3A;
 }
 
 #barra{
@@ -48,8 +48,9 @@ header nav a:hover {
 .p-3 img{
     float: left;
     margin-bottom: 5em;
+    padding-right: 1em;
 }
 
-.p-3 h5, p{
-   text-align: start;
+.p-3{
+    text-align: start;
 }
