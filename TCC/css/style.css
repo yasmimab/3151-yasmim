@@ -43,11 +43,39 @@ header nav a{
     transition: .2s;
 }
 
-header nav a:hover {
+header nav a:hover, header nav a button:hover{
     color: #318F3A;
     text-decoration: underline;
 }
 
+header nav a button{
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+dialog{
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 0 0.5em;
+    border-radius: 0.5em;
+    width: 8%;
+    font-weight: bold;
+    margin-left: 86em;
+}
+
+dialog p{
+    padding-left: 1em;
+    margin-bottom: -0.1em;
+}
+
+dialog button{
+    margin-left: 1em;
+    background-color: transparent;
+    border: none;
+    font-weight: 900;
+    color: rgb(158, 37, 37);
+}
 
 #barra{
     width: 30em;
@@ -171,4 +199,18 @@ main.cadastro p {
 main.cadastro a {
     font-weight: bold;
     color: white;
+}
+
+main.reserva{
+    text-align: center;
+    padding-top: 10em;
+}
+
+main.reserva h1{
+    font-weight: 900;
+    color: #318F3A;
+}
+
+main.reserva h3{
+    font-weight: bold;
 }
