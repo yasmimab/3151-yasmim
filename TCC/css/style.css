@@ -59,9 +59,9 @@ dialog{
     border: none;
     box-shadow: 0 0 0.5em;
     border-radius: 0.5em;
-    width: 8%;
+    width: auto;
     font-weight: bold;
-    margin-left: 86em;
+    position: absolute;
 }
 
 dialog p{
