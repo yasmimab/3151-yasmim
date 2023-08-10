@@ -1,5 +1,7 @@
-.content{
-    width: 20em;
+.card{
+    box-shadow: 2 2 0em;
+    width: 22em;
+    padding: 2em;
 }
 
 .card{
