@@ -7,11 +7,11 @@ $nome_mae           = $_POST["mae"];
 $rg           	  = $_POST["rg"];
 $cpf              = $_POST["cpf"];
 
-$fdg_dt_nasc = date('Y-m-d',strtotime($nasc)); 
+$fdt_nasc 	= implode("-", array_reverse(explode("/", $nasc)));
 
 $sql = "update aluno set ";
 $sql .= "nome='".$aluno."', pai='".$nome_pai."', mae='".$nome_mae."',";
-$sql .= "nasc='".$fdg_dt_nasc."', rg='".$rg."', cpf='".$cpf."' ";
+$sql .= "nasc='".$fdt_nasc."', rg='".$rg."', cpf='".$cpf."' ";
 $sql .= "where id = '".$id."';";
 
 $resultado = mysqli_query($con, $sql) or die(mysqli_error());
